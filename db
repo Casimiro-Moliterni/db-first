@@ -1,27 +1,25 @@
 cars
 
-id
-title
-march
-model
-year
-price
-color
-Type of gearbox
-Salesperson
-Power
-displacement
-Fuel
-marches
-Cylinders
-doors
-places
-traction
-car body
-weight
-Mileage
-city
-old owners
-Emission class
-Vehicle description
-present value
+id - INT - PRIMARY KEY - NOTNULL - AUTO_INCREMENT - UNIQUE
+title - VARCHAR(200) - NOTNULL
+march - VARCHAR(70) - NOTNULL - UNIQUE - INDEX
+model - VARCHAR(100) - NULL
+year - YEAR - UNIQUE - INDEX
+price - DECIMAL (12,2) - NOTNULL
+color - VARCHAR(20) - NULL
+Type of gearbox - VARCHAR(20) - NULL
+Power - SMALLINT - NULL
+Fuel - VARCHAR(20) - NULL
+rotten_number - VARCHAR(2) - NULL
+Cylinders  - VARCHAR(2) - NULL
+doors - VARCHAR(2) - NULL
+places - VARCHAR(2) - NULL
+traction - VARCHAR(15) - NULL
+car_body - VARCHAR(15) - NULL
+weight - VARCHAR(15) - NULL
+Mileage - MEDIUMINT - NOTNULL
+city - VARCHAR(30) - NOTNULL  
+old owners - VARCHAR(2) - NULL - DEFAUTL('1') 
+Emission_class VARCHAR(30) - NULL 
+Vehicle_description  TEXT - NOTNULL
+present_value DECIMAL(12,2) - NULL
